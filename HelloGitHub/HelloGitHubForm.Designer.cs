@@ -29,13 +29,25 @@ namespace HelloGitHub
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.afficherButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
+			// 
+			// afficherButton
+			// 
+			this.afficherButton.Location = new System.Drawing.Point(119, 180);
+			this.afficherButton.Name = "afficherButton";
+			this.afficherButton.Size = new System.Drawing.Size(139, 45);
+			this.afficherButton.TabIndex = 0;
+			this.afficherButton.Text = "Afficher Hello GitHub";
+			this.afficherButton.UseVisualStyleBackColor = true;
+			this.afficherButton.Click += new System.EventHandler(this.afficherButton_Click);
 			// 
 			// HelloGitHubForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.afficherButton);
 			this.Name = "HelloGitHubForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Hello GitHub";
@@ -44,6 +56,8 @@ namespace HelloGitHub
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Button afficherButton;
 	}
 }
 
