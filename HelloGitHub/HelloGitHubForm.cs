@@ -19,7 +19,7 @@ namespace HelloGitHub
 
 		private void afficherButton_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Hello Github encore une fois!");
+			MessageBox.Show("Hello Github!");
 		}
 	}
 }
